@@ -1,6 +1,7 @@
+import React from "react";
 import Navbar from "../components/navbar";
 
-const Dashboard = () => {
+function LoadingSheet() {
     return (
         <div className="h-full flex">
             <Navbar />
@@ -21,7 +22,15 @@ const Dashboard = () => {
 
                 <div className="flex flex-col grow w-full p-8 pt-4">
                     <div className="pb-3">
-                        <h3 className="text-3xl font-bold">Dashboard</h3>
+                        <h3 className="text-3xl font-bold">Loading Sheets</h3>
+                        <div>
+                            <button className="bg-[#04C139] text-white px-6 py-1">
+                                ADD
+                            </button>
+                            <button className="bg-[#549DCD] text-white px-6 py-1">
+                                VIEW
+                            </button>
+                        </div>
                     </div>
                     <div className="pb-4">
                         <span className="font-bold">Welcome, User</span>
@@ -66,6 +75,6 @@ const Dashboard = () => {
             </section>
         </div>
     );
-};
+}
 
-export default Dashboard;
+export default LoadingSheet;
