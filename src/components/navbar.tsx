@@ -1,9 +1,12 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { ReactComponent as AddAccount2Icon } from "../assets/icons/add-account-2.svg";
 import { ReactComponent as BagIcon } from "../assets/icons/bag.svg";
 import { ReactComponent as CartIcon } from "../assets/icons/cart.svg";
 import { ReactComponent as HomeIcon } from "../assets/icons/home.svg";
 import { ReactComponent as IdCardIcon } from "../assets/icons/id-card.svg";
+import { ReactComponent as KeyIcon } from "../assets/icons/key.svg";
+import { ReactComponent as SettingsIcon } from "../assets/icons/settings.svg";
 import { ReactComponent as SheetsIcon } from "../assets/icons/sheets.svg";
 import { ReactComponent as TruckIcon } from "../assets/icons/truck.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
@@ -94,7 +97,7 @@ function Navbar() {
       {
         id: 7,
         label: "Login",
-        icon: HomeIcon,
+        icon: KeyIcon,
         action: () => {
           console.log(`
         label: "Login",
@@ -105,7 +108,7 @@ function Navbar() {
       {
         id: 8,
         label: "Signup",
-        icon: HomeIcon,
+        icon: AddAccount2Icon,
         action: () => {
           console.log(`
         label: "Signup",
@@ -116,7 +119,7 @@ function Navbar() {
       {
         id: 9,
         label: "Settings",
-        icon: HomeIcon,
+        icon: SettingsIcon,
         action: () => {
           console.log(`
         label: "Settings",
@@ -157,7 +160,7 @@ function Navbar() {
       <div className="p-6">
         <Logo />
       </div>
-      <div className="grow flex flex-col text-xl text-[#BABABF]">
+      <div className="grow flex flex-col text-xl text-[#BABABF] overflow-auto">
         {items.map((item) => (
           <Fragment key={item.id}>
             {item.id > -1 ? (

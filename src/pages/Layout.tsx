@@ -20,7 +20,7 @@ function Layout() {
                     </a>
                 </header>
 
-                <div className="flex flex-col grow w-full p-8 pt-4">
+                <div className="overflow-auto flex flex-col grow w-full p-8 pt-4">
                     <Outlet />
                 </div>
             </section>
