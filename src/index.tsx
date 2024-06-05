@@ -3,17 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Dashboard from "./pages/dashboard";
-import LoadingSheet from "./pages/LoadingSheet";
+import AllRoute from "./AllRoute";
 
 const router = createBrowserRouter([
     {
-        path: "/dashboard",
-        element: <Dashboard />,
-    },
-    {
-        path: "/loading-sheets",
-        element: <LoadingSheet />,
+        path: "*",
+        element: <AllRoute />,
     },
 ]);
 
