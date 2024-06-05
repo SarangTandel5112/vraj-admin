@@ -1,25 +1,25 @@
-const ManageDrivers = () => {
+const Trucks = () => {
     return (
         <div className="w-full mt-4 flex justify-between">
             <div className="w-2/3 bg-white shadow-md rounded-lg overflow-scroll">
                 <div className="px-6 py-4">
                     <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                        Manage Drivers
+                        Manage Trucks
                     </h2>
                     <table className="min-w-full divide-y divide-gray-200">
                         <thead>
                             <tr>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Driver ID
+                                    Truck ID
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Name
+                                    License Plate
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    License Number
+                                    Model
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Phone Number
+                                    Capacity
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Status
@@ -149,14 +149,14 @@ const ManageDrivers = () => {
             </div>
             <div className="w-1/3 bg-white shadow-md rounded-lg overflow-hidden p-6 ml-4">
                 <h2 className="text-lg font-semibold text-gray-800 mb-4 text-center">
-                    New Driver
+                    New Truck
                 </h2>
                 <div className="mb-4">
                     <label
                         className="block text-gray-700 text-sm font-bold mb-2"
                         htmlFor="name"
                     >
-                        Name
+                        License Plate
                     </label>
                     <input
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -170,7 +170,7 @@ const ManageDrivers = () => {
                         className="block text-gray-700 text-sm font-bold mb-2"
                         htmlFor="license"
                     >
-                        License Number
+                        Model
                     </label>
                     <input
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -184,7 +184,7 @@ const ManageDrivers = () => {
                         className="block text-gray-700 text-sm font-bold mb-2"
                         htmlFor="phone"
                     >
-                        Phone Number
+                        Capacity
                     </label>
                     <input
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -217,4 +217,4 @@ const ManageDrivers = () => {
     );
 };
 
-export default ManageDrivers;
+export default Trucks;
