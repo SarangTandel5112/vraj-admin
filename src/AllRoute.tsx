@@ -5,6 +5,8 @@ import Layout from "./pages/Layout";
 import LoadingSheet from "./pages/LoadingSheet";
 import Dashboard from "./pages/dashboard";
 import DeliveryManagement from "./pages/DeliveryManagement";
+import OrderTracking from "./pages/OrderTracking";
+import RouteCreation from "./pages/RouteCreation";
 
 function AllRoute() {
     return (
@@ -18,6 +20,8 @@ function AllRoute() {
                         element={<FleedManagement />}
                     />
                     <Route path="/delivery" element={<DeliveryManagement />} />
+                    <Route path="/order-tracking" element={<OrderTracking />} />
+                    <Route path="/route-creation" element={<RouteCreation />} />
                 </Route>
             </Routes>
         </BreadcrumbsProvider>
